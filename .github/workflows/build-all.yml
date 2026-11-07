@@ -95,7 +95,7 @@ jobs:
                   "image-amdgpu-mesa","image-amdgpu-argon-gles","image-amdgpu-argon-cpu",
                   "image-amdgpu-720","image-amdgpu-switch","image-amdgpu-allfw",
                   "image-radeon","image-i915","image-i915-legacy",
-                  "image-gpu","image-gpu-legacy","image-gpu-sb"
+                  "image-gpu","image-gpu-legacy"
                 ]' ;;
               cross)
                 json='[
@@ -123,9 +123,9 @@ jobs:
                   "image-arm64-virt","image-arm64-virt-debug",
                   "image-arm64-virt-minimal","image-arm64-virt-minimal-release",
                   "image-arm64-virt-wayland","image-arm64-virt-wayland-debug",
-                  "image-arm64-bcm2837","image-arm64-sg2002","image-arm64-virt-full",
+                  "image-arm64-bcm2837","image-arm64-sg2002",
                   "image-riscv64-virt-minimal",
-                  "netboot-arm64-virt-minimal","wsl","wsl-debug","image-gpu-sb"
+                  "netboot-arm64-virt-minimal","wsl","wsl-debug"
                 ]' ;;
               *)
                 echo "::error::Unknown preset '$PRESET'"
