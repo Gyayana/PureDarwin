@@ -92,8 +92,7 @@ jobs:
               cross)
                 json='[
                   "image-arm64-virt", "image-arm64-virt-minimal", "image-arm64-virt-minimal-release", "image-arm64-virt-full",
-                  "image-arm64-bcm2837", "netboot-arm64-virt-minimal", "image-arm32-rk3506", "image-arm32-sun7i",
-                  "image-arm32-virta7"
+                  "image-arm64-bcm2837", "netboot-arm64-virt-minimal"
                 ]' ;;
               all)
                 # extras: netboot tree + WSL bundles (no .img, still image-like)
@@ -101,7 +100,7 @@ jobs:
                   "image", "image-debug", "image-stripped", "image-hfs",
                   "image-minimal", "image-minimal-debug", "image-wayland", "image-arm64-virt",
                   "image-arm64-virt-minimal", "image-arm64-virt-minimal-release", "image-arm64-virt-full", "image-arm64-bcm2837",
-                  "netboot-arm64-virt-minimal", "image-arm32-rk3506", "image-arm32-sun7i", "image-arm32-virta7"
+                  "netboot-arm64-virt-minimal"
                 ]' ;;
               *)
                 echo "::error::Unknown preset '$PRESET'"
